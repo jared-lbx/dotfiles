@@ -38,6 +38,11 @@ Incredible framework/boilerplate for `nvim`. Exposes configuration options in a 
 
 I won't go into too much detail here, but will give some tips about approaching `nvim` configuration - plugins, and their useful commands that I have off the top of my head... if this fails to yield anything useful, doc-diving is on your docket!
 
+- `Packer`: `nvim` plugin manager. 
+  - `:PackerInstall` when you've added plugins to your plugins table in `nvim/lua/custom/chadrc.lua`.
+    - You may have to exit and re-enter `nvim` for changes to sync.
+  - `:PackerCompile` after installing a plugin, to recompile your binaries (I think. Idrk tbh) with that plugin's new code.
+  - `:PackerSync` to update plugins. Not recommended to do this on a workday - save for weekends when you have oodles(!) of time to update configs for breaking changes.
 - `treesitter`: AST Language parser (I think?) that enables (among other things) IDE-like syntax highlighting.
   - `:TSInstallInfo`/`:TSInstall`
 - `LSP`: Language-Server protocol. Parses files & their changes, asks a language server (typescript, css, rust, etc) if the changes are ok, reports diagnostics if not...
