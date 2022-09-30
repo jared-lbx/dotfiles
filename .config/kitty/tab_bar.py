@@ -72,9 +72,6 @@ def _draw_left_status(
     trailing_spaces = min(max_title_length - 1, draw_data.trailing_spaces)
     max_title_length -= trailing_spaces
     extra = screen.cursor.x - before - max_title_length
-    if extra > 0:
-        screen.cursor.x -= extra + 1
-        screen.draw("…")
     if trailing_spaces:
         screen.draw(" " * trailing_spaces)
     end = screen.cursor.x
