@@ -1,4 +1,7 @@
 #!/bin/bash
+
+# zmodload zsh/zprof
+
 ZSH_DIR=~/.config/zsh
 eval "$(starship init zsh)"
 
@@ -13,3 +16,5 @@ do
 done
 
 . ~/.config/zsh/plugins/init.sh
+
+# zprof
